@@ -1,0 +1,5 @@
+[
+  { "route": "/", "staticFile": "ribbit.statics/index" },
+  { "route": "/two", "staticFile": "ribbit.statics/two" },
+  { "route": "/merp/three", "staticFile": "ribbit.statics/merp/three" }
+]
