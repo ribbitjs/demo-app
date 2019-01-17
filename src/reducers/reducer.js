@@ -1,8 +1,9 @@
 import * as types from "../actions/actionTypes";
 import { fromJS, toJS } from "immutable";
+import { ribbitState } from "ribbit";
 
 const initialState = fromJS({
-  count: 0
+  count: 5
 });
 
 const mainReducer = (state = initialState, action) => {
@@ -24,7 +25,7 @@ const mainReducer = (state = initialState, action) => {
 
       tempState = state.toJS();
       count = tempState.count + -action.payload;
-
+      ribbitState({ ...tempState, count });
       return fromJS({
         ...tempState,
         count
