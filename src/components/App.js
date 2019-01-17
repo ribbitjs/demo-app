@@ -3,7 +3,7 @@ import React from "react";
 import One from "./one";
 import Two from "./two";
 import Three from "./threeFolder/three";
-import "../App.css";
+// import "../App.css";
 
 class App extends React.Component {
   render() {
