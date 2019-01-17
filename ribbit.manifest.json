@@ -1,5 +1,1 @@
-[
-  { "route": "/", "staticFile": "ribbit.statics/index" },
-  { "route": "/two", "staticFile": "ribbit.statics/two" },
-  { "route": "/merp/three", "staticFile": "ribbit.statics/merp/three" }
-]
+[{"route":"/","static":"ribbit.statics/index"},{"route":"/two","static":"ribbit.statics/two"},{"route":"/merp/three","static":"ribbit.statics/merp/three"}]
