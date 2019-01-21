@@ -1,1 +1,1 @@
-[{"route":"/","static":"ribbit.statics/index"},{"route":"/two","static":"ribbit.statics/two"},{"route":"/merp/three","static":"ribbit.statics/merp/three"}]
+{"/":"ribbit.statics/index","/two":"ribbit.statics/two"}

@@ -7,9 +7,5 @@
   {
     "route": "/two",
     "component": "./two.js"
-  },
-  {
-    "route": "/merp/three",
-    "component": "./threeFolder/three.js"
   }
 ]

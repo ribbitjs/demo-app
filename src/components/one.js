@@ -1,11 +1,14 @@
 import React from "react";
 import { connect } from "react-redux";
 import * as actions from "../actions/actions";
+import Child from "./child";
+import ribbitPreload from "/home/marlon/Desktop/ribbit/lib/api/ribbitPreload.js";
 
 const mapStateToProps = store => {
   const state = store.mainReducer.toJS();
   return {
-    count: state.count
+    count: state.count,
+    filler: state.filler
   };
 };
 
@@ -16,6 +19,9 @@ const mapDispatchToProps = dispatch => {
     },
     decrement: num => {
       dispatch(actions.decrement(num));
+    },
+    sendFetch: () => {
+      dispatch(actions.sendFetch());
     }
   };
 };
@@ -26,6 +32,10 @@ class One extends React.Component {
     this.state = {
       hOne: "PAGE ONE"
     };
+  }
+
+  componentWillMount() {
+    ribbitPreload(this.props.sendFetch, "one");
   }
 
   handleClick() {
@@ -40,6 +50,10 @@ class One extends React.Component {
         <p>{this.props.count}</p>
         <button onClick={() => this.props.increment(1)}>INCREMENT</button>
         <button onClick={() => this.props.decrement(1)}>DECREMENT</button>
+        <Child />
+
+        <h2>THIS IS A WHOLE BUNCH OF RANDOM WORDS</h2>
+        <p>{this.props.filler}</p>
       </div>
     );
   }

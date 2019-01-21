@@ -4,15 +4,18 @@ import One from "./one";
 import Two from "./two";
 import Three from "./threeFolder/three";
 
-import { createStore, combineReducers, applyMiddleware } from "redux";
-import { connect, Provider } from "react-redux";
+import { combineReducers, createStore, applyMiddleware } from "redux";
+import { Provider } from "react-redux";
+import thunk from "redux-thunk";
 
 import mainReducer from "../reducers/reducer";
 
-const reducer = combineReducers({ mainReducer });
+import getRibbitStore from "/home/marlon/Desktop/ribbit/lib/api/getRibbitStore";
 
-const store = createStore(reducer);
-// import "../App.css";
+const reducer = combineReducers({ mainReducer });
+// export const store = createStore(reducer, applyMiddleware(thunk));
+
+export const store = getRibbitStore(reducer, thunk);
 
 class App extends React.Component {
   render() {
