@@ -2,6 +2,8 @@ import React from "react";
 import { connect } from "react-redux";
 import * as actions from "../actions/actions";
 import Child from "./child";
+// import "../App.css";
+
 import ribbitPreload from "/home/marlon/Desktop/ribbit/lib/api/ribbitPreload.js";
 
 const mapStateToProps = store => {

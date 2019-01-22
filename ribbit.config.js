@@ -7,7 +7,14 @@ module.exports = {
   author: "marlon",
   preset: "react",
   rules: { css: "internal", view: "html", images: { prefetchImg: false } },
-  dependencies: ["babel-loader", "@babel/preset-env", "@babel/preset-react"],
+  dependencies: [
+    "babel-loader",
+    "@babel/preset-env",
+    "@babel/preset-react",
+    "react-redux",
+    "redux",
+    "react"
+  ],
   webpackSettings: {
     module: {
       rules: [
