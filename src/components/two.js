@@ -1,7 +1,7 @@
 import React from "react";
 import { connect } from "react-redux";
 import * as actions from "../actions/actions";
-import ribbitPreload from "/home/marlon/Desktop/ribbit/lib/api/ribbitPreload.js";
+import ribbitPreload from "/Users/butlerm/Documents/code-smith/production-project/ribbit/lib/ribbitPreload.js";
 
 const mapStateToProps = store => {
   const state = store.mainReducer.toJS();
@@ -36,6 +36,11 @@ class Two extends React.Component {
     );
   }
 }
+
+export const context = {
+  title: 'Page #2',
+  meta: `<meta name="description" content="Much ado about nothing">`
+};
 
 export default connect(
   mapStateToProps,

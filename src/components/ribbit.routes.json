@@ -2,10 +2,12 @@
   {
     "route": "/",
     "assetName": "index",
-    "component": "./one.js"
+    "component": "./one.js",
+    "template": "home.html"
   },
   {
     "route": "/two",
-    "component": "./two.js"
+    "component": "./two.js",
+    "template": "about.html"
   }
 ]

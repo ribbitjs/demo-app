@@ -1,6 +1,6 @@
 import * as types from "../actions/actionTypes";
 import { fromJS, toJS } from "immutable";
-import ribbitStore from "/home/marlon/Desktop/ribbit/lib/api/ribbitStore";
+import ribbitStore from "/Users/butlerm/Documents/code-smith/production-project/ribbit/lib/ribbitStore";
 
 const initialState = fromJS({
   count: 8,

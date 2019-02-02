@@ -6,10 +6,11 @@ import Three from "./threeFolder/three";
 import { combineReducers, createStore, applyMiddleware } from "redux";
 import { Provider } from "react-redux";
 import thunk from "redux-thunk";
+import styles from '../App.css'
 
 import mainReducer from "../reducers/reducer";
 
-import getRibbitStore from "/home/marlon/Desktop/ribbit/lib/api/getRibbitStore";
+import getRibbitStore from "/Users/butlerm/Documents/code-smith/production-project/ribbit/lib/getRibbitStore";
 
 const reducer = combineReducers({ mainReducer });
 

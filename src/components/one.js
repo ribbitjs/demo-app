@@ -4,7 +4,7 @@ import * as actions from "../actions/actions";
 import Child from "./child";
 // import "../App.css";
 
-import ribbitPreload from "/home/marlon/Desktop/ribbit/lib/api/ribbitPreload.js";
+import ribbitPreload from "/Users/butlerm/Documents/code-smith/production-project/ribbit/lib/ribbitPreload.js";
 
 const mapStateToProps = store => {
   const state = store.mainReducer.toJS();
@@ -60,6 +60,11 @@ class One extends React.Component {
     );
   }
 }
+
+export const context = {
+  title: 'Page #1',
+  meta: `<meta name="description" content="Much ado about page #1">`
+};
 
 export default connect(
   mapStateToProps,
